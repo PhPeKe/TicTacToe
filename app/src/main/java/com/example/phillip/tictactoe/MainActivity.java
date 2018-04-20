@@ -10,6 +10,9 @@ import android.content.DialogInterface;
 
 import java.io.Serializable;
 
+import static android.graphics.Color.BLACK;
+import static android.graphics.Color.BLUE;
+import static android.graphics.Color.RED;
 import static com.example.phillip.tictactoe.GameState.PLAYER_ONE;
 import static com.example.phillip.tictactoe.GameState.PLAYER_TWO;
 import static com.example.phillip.tictactoe.Tile.CROSS;
@@ -153,9 +156,11 @@ public class MainActivity extends AppCompatActivity {
         playerOneTurn = game.playerOneTurn;
         switch(tile) {
             case CROSS:
+                button.setTextColor(BLUE);
                 button.setText("X");
                 break;
             case CIRCLE:
+                button.setTextColor(RED);
                 button.setText("O");
                 break;
             case INVALID:
@@ -192,15 +197,24 @@ public class MainActivity extends AppCompatActivity {
 
         newgame.show();
 
-        button1.setText("BUTTON");
-        button2.setText("BUTTON");
-        button3.setText("BUTTON");
-        button4.setText("BUTTON");
-        button5.setText("BUTTON");
-        button6.setText("BUTTON");
-        button7.setText("BUTTON");
-        button8.setText("BUTTON");
-        button9.setText("BUTTON");
+        button1.setText(".");
+        button1.setTextColor(BLACK);
+        button2.setText(".");
+        button2.setTextColor(BLACK);
+        button3.setText(".");
+        button3.setTextColor(BLACK);
+        button4.setText(".");
+        button4.setTextColor(BLACK);
+        button5.setText(".");
+        button5.setTextColor(BLACK);
+        button6.setText(".");
+        button6.setTextColor(BLACK);
+        button7.setText(".");
+        button7.setTextColor(BLACK);
+        button8.setText(".");
+        button8.setTextColor(BLACK);
+        button9.setText(".");
+        button9.setTextColor(BLACK);
 
     }
 
